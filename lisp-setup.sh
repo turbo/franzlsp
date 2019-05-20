@@ -1,8 +1,13 @@
 #!/usr/bin/env bash
 
+# needroot
+if [ $EUID != 0 ]; then
+  sudo "$0" "$@"
+  exit $?
+fi
+
 # clean old files
 rm -rf /usr/local
-
 
 # link lisp library
 mkdir -p /usr/local/lib
