@@ -15,7 +15,7 @@
 	${Liszt} -xaq $*
 
 #--- Default paths and programs:
-LibDir = /usr/lib/lisp
+LibDir = /usr/local/lib/lisp
 CopyTo = /dev/null
 Liszt = liszt
 
